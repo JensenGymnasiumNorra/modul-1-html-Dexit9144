@@ -19,15 +19,44 @@ Se till att när man klickar på submit-knappen i formuläret så ska tack.html 
 -->
 
 <!DOCTYPE html>
-<html>
-
+<html lang="sv">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>Formulär</title>
 </head>
-
 <body>
+<form action="tack.html">
+
+<fieldset>
+  <legend>Base settings</legend>
+  <!------------------>
+  Name: <input type="text"><br>
+  <!------------------>
+  Kön:
+  Man <input type="radio" name="gender" checked>
+  Kvinna <input type="radio" name="gender"><br>
+  <!------------------>
+  Age:
+  <18 <input type="radio" name="age">
+  18 <input type="radio" name="age">
+  >18 <input type="radio" name="age"><br>
+  <!------------------>
+  City:
+  <select name="city">
+      <option value="Stockholm">Stockholm</option>
+      <option value="Göteborg">Göteborg</option>
+      <option value="Malmö">Malmö</option>
+      <option value="Other">Other</option>
+  </select>
+</fieldset>
+
+<fieldset>
+  <legend>Contacts</legend>
+  Email: <input type="text"><br>
+  Phone Number: <input type="text" value="000-000-0000"><br>
+  <button type="submit">Send</button>
+</fieldset>
+</form>
 
 </body>
-
 </html>
